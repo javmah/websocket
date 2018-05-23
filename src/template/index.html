@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Gorilla WebSocket
+    </title>
+</head>
+
+<body>
+    <h1>Hello WebSockets</h1>
+</body>
+
+<script >
+    var ws = new WebSocket("ws://localhost:3000/v3/ws");
+    ws.addEventListener("message",function(e){
+        console.log(e);
+    } )
+    // console.log(ws);
+
+</script>
+
+</html>
